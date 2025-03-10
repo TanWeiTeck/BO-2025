@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import ActivityCard from './activityCard'
 
-const ActivitySection = () => {
+const ActivityList = () => {
   return (
     <div className="flex max-h-full flex-col gap-6 overflow-hidden">
       <div className="flex justify-between">
@@ -36,7 +36,7 @@ const ActivitySection = () => {
   )
 }
 
-export default ActivitySection
+export default ActivityList
 
 const activityList = [
   {

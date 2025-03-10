@@ -1,10 +1,13 @@
+'use client'
+
 import React from 'react'
 import Header from './components/header'
 import Controls from './components/controlPanel'
 import StateCard from './components/stateCard'
 import SalesReportGraph from './components/salesReportGraph'
 import StoreTrafficBarChart from './components/storeTrafficBarChart'
-import ActivitySection from './components/activitySection'
+import ActivityList from './components/activityList'
+import AddSection from './components/addSection'
 
 const SalesOverview = () => {
   return (
@@ -20,9 +23,10 @@ const SalesOverview = () => {
           </div>
           <SalesReportGraph />
           <StoreTrafficBarChart />
+          <AddSection onAdd={() => console.log('add section')} />
         </div>
         <div className="max-h-full w-[240px] flex-col gap-6">
-          <ActivitySection />
+          <ActivityList />
         </div>
       </div>
     </div>

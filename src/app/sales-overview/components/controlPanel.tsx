@@ -37,9 +37,12 @@ const Controls = () => {
         <ToggleGroupItem value="sdr" className="max-w-fit border-r px-4">
           SDR view
         </ToggleGroupItem>
-        <ToggleGroupItem value="add" className="max-w-fit px-4">
-          <Plus />
-        </ToggleGroupItem>
+        <div
+          className="hover:bg-brand/5 flex h-full cursor-pointer items-center px-2.5 transition-colors duration-200"
+          onClick={() => console.log('add section')}
+        >
+          <Plus className="h-4 w-4" />
+        </div>
       </ToggleGroup>
       <div className="flex items-center gap-2">
         <AppDateRangePicker />
